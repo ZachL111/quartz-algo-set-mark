@@ -1,0 +1,17 @@
+{
+  "repo": "quartz-algo-set-mark",
+  "thresholds": {
+    "signal": 4,
+    "slack": 1,
+    "confidence": 1,
+    "drag": 3,
+    "ship": 190,
+    "watch": 105
+  },
+  "terms": [
+    "input width",
+    "search depth",
+    "boundary pressure",
+    "complexity"
+  ]
+}
