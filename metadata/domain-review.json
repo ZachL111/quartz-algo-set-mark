@@ -1,0 +1,73 @@
+{
+  "repo": "quartz-algo-set-mark",
+  "language": "OCaml",
+  "category": "Algorithms",
+  "goal": "Package an OCaml local lab for set analysis with bounded scenario files, conflict explanations, and documented operating limits.",
+  "review_model": {
+    "terms": [
+      "input width",
+      "search depth",
+      "boundary pressure",
+      "complexity"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "input width",
+      "signal": 44,
+      "slack": 28,
+      "drag": 12,
+      "confidence": 70,
+      "score": 150,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "search depth",
+      "signal": 53,
+      "slack": 22,
+      "drag": 8,
+      "confidence": 76,
+      "score": 180,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "boundary pressure",
+      "signal": 67,
+      "slack": 46,
+      "drag": 15,
+      "confidence": 77,
+      "score": 212,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "complexity",
+      "signal": 51,
+      "slack": 36,
+      "drag": 19,
+      "confidence": 90,
+      "score": 171,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "input width",
+      "signal": 72,
+      "slack": 34,
+      "drag": 20,
+      "confidence": 68,
+      "score": 186,
+      "lane": "ship"
+    }
+  ]
+}
